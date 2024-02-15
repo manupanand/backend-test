@@ -11,6 +11,11 @@ app.get('/test',(req,res)=>{
         message:"On test route"
     })
 })
+app.get('/getdata',(req,res)=>{
+    res.status(200).json({
+        message:"This is rout getting all user data"
+    })
+})
 app.post('/signup',(req,res)=>{
     res.status(200).json({
         message:" got sign up post request"
